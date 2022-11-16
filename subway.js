@@ -53,6 +53,30 @@ function deletePerso(select) {
     divCardContainer.removeChild(cardSelect)
 }
 
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { 
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { 
+        elem.msRequestFullscreen();
+    }
+}
+
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { 
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { 
+        document.msExitFullscreen();
+    }
+}
+
+function showMemory() {
+    document.getElementById('result').innerHTML = navigator.deviceMemory || 'unknown'
+}
+
 
 
 

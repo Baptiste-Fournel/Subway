@@ -85,3 +85,29 @@
 .hidden {
     display:none;
 }
+
+.divFullscreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+
+.btnFullscreen {
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+
+
+.divMemory {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1% 0 5% 0;
+}
+
+.btnMemory {
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
